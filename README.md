@@ -37,19 +37,33 @@ Una vez encontrada la mejor combinación de parámetros para el modelo seleccion
 Finalmente, llevamos a cabo un ensamble de los resultados de nueve modelos preentrenados, combinando las predicciones de acuerdo con el rendimiento de cada modelo y ponderándolas según su precisión. Nuestro criterio de selección se basó en incluir al menos un modelo de cada una de las cuatro arquitecturas preentrenadas disponibles, así como todos aquellos cuya precisión superara el umbral del 0.95. Este enfoque resultó en la selección de un modelo VGG19, dos modelos ResNet34, tres modelos DenseNet y tres modelos EfficientNet para formar parte del ensamble final.
 
 ## Results and conclusions
-The project concluded with an outstanding accuracy rate of 94.72% in image classification, receiving a grade of 9.45/10. This achievement reflects my competence in applying cutting-edge deep learning methodologies to practical challenges in image recognition.
-
-Achieved an impressive accuracy rate of 94.72% by employing transfer learning with pretrained Convolutional Neural Network models, such as VGG19 and Resnet34, using an ensemble approach.
-
-Después de aplicar la metodología descrita, logramos obtener resultados prometedores en la tarea de clasificación de imágenes utilizando técnicas de Deep Learning. Al evaluar el rendimiento de nuestros modelos en el conjunto de pruebas, observamos una precisión notablemente alta, lo que demuestra la efectividad de nuestra aproximación en la identificación y categorización automática de imágenes.
+Tras aplicar la metodología descrita, hemos obtenido resultados prometedores en la tarea de clasificación de imágenes utilizando técnicas de Deep Learning. Al evaluar el rendimiento de nuestros modelos en el conjunto de pruebas, hemos observado una precisión notablemente alta, lo que demuestra la efectividad de nuestra aproximación en la identificación y categorización automática de imágenes.
 
 Además, al realizar un ensamble de los resultados de varios modelos preentrenados, pudimos mejorar aún más la precisión y robustez del sistema final. Esta estrategia nos permitió combinar las fortalezas de cada modelo individual y mitigar posibles debilidades, obteniendo así un resultado general más sólido y confiable.
 
-Es importante destacar que, si bien logramos resultados prometedores, también identificamos áreas de mejora y posibles limitaciones en nuestro enfoque. Por ejemplo, podríamos explorar técnicas adicionales de regularización para reducir aún más el riesgo de sobreajuste y mejorar la generalización del modelo a datos no vistos.
-
 En conclusión, este proyecto ha demostrado la viabilidad y efectividad de utilizar técnicas de Deep Learning para la clasificación de imágenes, ofreciendo soluciones prácticas y eficientes para una variedad de aplicaciones en el ámbito de la visión por computadora. Los resultados obtenidos representan un paso significativo hacia el desarrollo de sistemas inteligentes capaces de comprender y procesar información visual de manera similar a los seres humanos.
+
+En conclusión, este proyecto ha demostrado la viabilidad y efectividad de utilizar técnicas de Deep Learning para la clasificación de imágenes, ofreciendo soluciones prácticas y eficientes para una variedad de aplicaciones en el ámbito de la visión por computadora. La conclusión del proyecto se vio reflejada en una destacada tasa de precisión del 94.72% en la clasificación de imágenes, lo que me valió una calificación de 9.45/10, resaltando mi competencia en la aplicación de metodologías de vanguardia en Deep Learning para enfrentar desafíos prácticos en el reconocimiento de imágenes.
+
 ## Limitations
+A pesar de lograr resultados prometedores, es importante reconocer que nuestro enfoque también presenta áreas de mejora y posibles limitaciones. Por ejemplo, podríamos explorar técnicas adicionales de regularización para reducir aún más el riesgo de sobreajuste y mejorar la capacidad de generalización del modelo a datos no vistos.
+
+El dataset CIFAR-10, aunque ampliamente utilizado y diverso, contiene imágenes de baja resolución (32x32), lo que podría limitar la capacidad de generalización de nuestros modelos a situaciones con imágenes de mayor calidad o resolución.
+
+Debido a las restricciones de recursos computacionales, como el tiempo de procesamiento y la memoria disponible, no pudimos explorar todas las posibles combinaciones de modelos y hiperparámetros, lo que podría haber afectado el rendimiento final de nuestro sistema.
+
+Aunque seleccionamos cuidadosamente los modelos preentrenados para nuestro ensamble, es posible que algunos modelos hayan sido más adecuados que otros para la tarea de clasificación de imágenes en el dataset CIFAR-10. Una exploración más exhaustiva de diferentes arquitecturas de modelos preentrenados podría haber mejorado aún más nuestros resultados.
+
+Además, la interpretación de los resultados podría verse limitada por la complejidad inherente de los modelos de Deep Learning y la falta de transparencia en sus decisiones internas, lo que podría dificultar la comprensión de cómo y por qué el modelo llega a ciertas conclusiones.
 
 ## Contributions
+Nuestro trabajo ha proporcionado soluciones prácticas y eficientes para la clasificación automática de imágenes, lo que puede tener aplicaciones potenciales en una variedad de campos.
+
+Mediante el ensamble de varios modelos preentrenados, hemos mejorado la precisión y la robustez del sistema final, lo que demuestra la utilidad de esta estrategia para mejorar el rendimiento de los modelos de clasificación de imágenes.
+
+Además, hemos compartido el código y los recursos utilizados en este proyecto, lo que permite a otros investigadores y profesionales reproducir nuestros resultados y construir sobre nuestro trabajo. Esta transparencia y accesibilidad fomenta la colaboración y el avance del conocimiento en el campo de la clasificación de imágenes mediante técnicas de Deep Learning.
 
 ## Tools
+- Technologies: Python | Google Colab | *CIFAR-10 dataset
+- Libraries: numpy | pandas | matplotlib | sklearn | fastai | Google Colab | random | os | torchvision
+- Machine Learning Models: VGG19 | ResNet34 | DenseNet121 | EfficientNet_b0
