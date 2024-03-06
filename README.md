@@ -67,7 +67,7 @@ Confusion Matrix (one model of EfficientNet 4)
 
 ![Captura_loss](https://github.com/XReverte/Image_Classification/assets/100844285/0a232803-77c0-4b39-afe6-a542d14f4da4)
 
-Maximum Error Images
+Maximum Error Images (one model of EfficientNet 4)
 
 ## Limitations
 Despite achieving promising results, it is important to acknowledge that our approach also presents areas for improvement and potential limitations. For example, we could explore additional regularization techniques to further reduce the risk of overfitting and enhance the model's ability to generalize to unseen data.
