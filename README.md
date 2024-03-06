@@ -52,22 +52,22 @@ The conclusion of the project was reflected in an outstanding accuracy rate of 9
 
 ![captura_epochs1](https://github.com/XReverte/Image_Classification/assets/100844285/f237eb48-970d-490b-a66e-a56d75a7f6a8)
 
-Training results before Progressive Resizing (one model of EfficientNet 4). bach_size=64 | dropout=0.005 | epochs=10 | learning_rate=0.005 | weight_decay= 0.0 | freeze_epochs=3
+Training results before Progressive Resizing (EfficientNet). bach_size=64 | dropout=0.005 | epochs=10 | learning_rate=0.005 | weight_decay= 0.0 | freeze_epochs=3
 
 
 ![Captura_epochs2](https://github.com/XReverte/Image_Classification/assets/100844285/a9243c83-d081-4744-b2d2-6ccf27f1e9a3)
 
-Training Rresults after Progressive Resizing (one model of EfficientNet 4). bach_size=256 | image_size=256 | dropout=0.005 | epochs=20 | learning_rate=0.01 | weight_decay= 0.0 | freeze_epochs=1 | cbs=callbacks
+Training Rresults after Progressive Resizing (EfficientNet). bach_size=256 | image_size=256 | dropout=0.005 | epochs=20 | learning_rate=0.01 | weight_decay= 0.0 | freeze_epochs=1 | cbs=callbacks
 
 
 ![Captura_ConfMatrix](https://github.com/XReverte/Image_Classification/assets/100844285/692be5a5-dc8b-4183-af78-ba1238bdfebf)
 
-Confusion Matrix (one model of EfficientNet 4)
+Confusion Matrix (EfficientNet)
 
 
 ![Captura_loss](https://github.com/XReverte/Image_Classification/assets/100844285/0a232803-77c0-4b39-afe6-a542d14f4da4)
 
-Maximum Error Images (one model of EfficientNet 4)
+Maximum Error Images (EfficientNet)
 
 ## Limitations
 Despite achieving promising results, it is important to acknowledge that our approach also presents areas for improvement and potential limitations. For example, we could explore additional regularization techniques to further reduce the risk of overfitting and enhance the model's ability to generalize to unseen data.
